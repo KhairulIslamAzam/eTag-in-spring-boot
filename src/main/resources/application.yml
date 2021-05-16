@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eTag
+server:
+  port: ${PORT:8888}
+---
+spring:
+  datasource:
+    username: root
+    password: 104498Azam
+    url: jdbc:mysql://localhost:3306/eTagdb
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
